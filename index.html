@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Orlando Naldo" />
+
+    <meta
+      name="keywords"
+      content="Calculando áreas de figuras geométricas html, css, javascript"
+    />
+    <meta />
+    <meta
+      name="description"
+      content="Calculando áreas de figuras geométricas html, css, javascript"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <title>Figuras Geométricas</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Figuras Geométricas</h1>
+      <p class="header-description">
+        Calcular diferentes medidas de figuras geométricas como área y
+        perímetro.
+      </p>
+    </header>
+    <!-- RESPUESTA  -->
+    <div class="answer" >
+      <p id="resultado"></p>
+    </div>
+    <!-- SECTION DE CAJAS  -->
+    <section class="figure">
+      <div class="box">
+        <div class="box-header">
+          <h2>Cuadrado</h2>
+        </div>
+        <div class="box-main">
+          <p class="box-main__text">
+            ? Cuanto mide cada lado de tu cuadrado?
+          </p>
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtCuadrado"
+            placeholder="Ingrese lado"
+          />
+          <button class="box-main__btn" type="button" onclick="calcularPerimetroCuadrado()" >Perimetro</button>
+          <button class="box-main__btn" type="button" onclick="calcularAreaCuadrado()" >Area</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          <h2>Triangulo</h2>
+        </div>
+        <div class="box-main">
+          <p class="box-main__text">
+            ? Cuanto mide cada lado de tu triangulo?
+          </p>
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtLadoA"
+            placeholder="Ingrese ladoA"
+          />
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtLadoB"
+            placeholder="Ingrese ladoB"
+          />
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtLadoC"
+            placeholder="Ingrese ladoC"
+          />
+          <button class="box-main__btn" type="button" onclick="calcularPerimetroTriangulo()">Perimetro</button>
+          <p class="box-main__text">
+            ? Cuanto mide base y altura del triangulo?
+          </p>
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtBaseTriangulo"
+            placeholder="Ingrese Base"
+          />
+          <input
+          class="box-main__input"
+          type="number"
+          name="side"
+          id="txtAlturaTriangulo"
+          placeholder="Ingrese Altura"
+        />
+          <button class="box-main__btn" type="button" onclick="calcularAreaTriangulo()">Area</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          <h2>Circulo</h2>
+        </div>
+        <div class="box-main">
+          <p class="box-main__text">
+            ? Cuanto mide el radio de tu circulo?
+          </p>
+          <input
+            class="box-main__input"
+            type="number"
+            name="side"
+            id="txtRadioCirculo"
+            placeholder="Ingrese radio"
+          />
+          <button class="box-main__btn" type="button" onclick="calcularDiametroCirculo()">Diámetro</button>
+          <button class="box-main__btn" type="button" onclick="calcularPerimetroCirculo()" >Perimetro</button>
+          <button class="box-main__btn" type="button" onclick="calcularAreaCirculo()" >Area</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

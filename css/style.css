@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: #ccc;
+}
+/* ENCABEZADO  */
+
+.header {
+  background-color: #0d0e0db3;
+  text-align: center;
+  padding: 25px;
+}
+.header-title {
+  color: #eee;
+  text-transform: uppercase;
+}
+.header-description {
+  color: #eee;
+  padding: 15px;
+}
+
+/* RESPUESTA  */
+.answer {
+  text-align: center;
+  padding: 10px;
+}
+.answer p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* SECTION CAJAS  */
+.figure {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.box {
+  width: 340px;
+  height: 580px;
+  border: 3px solid #0d0e0db3;
+  border-radius: 10px;
+  margin: 15px;
+  float: left;
+  overflow: hidden;
+}
+.box-header {
+  background-color: #0d0e0db3;
+  text-align: center;
+}
+.box-header h2 {
+  color: #eee;
+  padding: 15px;
+}
+.box-main {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.box-main__text {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box-main__input {
+  display: block;
+  width: 70%;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border: 3px solid #eee;
+  outline: none;
+  border-radius: 8px;
+}
+.box-main__input:focus-within {
+  border: 3px solid rgba(59, 107, 237, 0.5);
+  box-shadow: 0 0 10px #719ece;
+}
+.box-main__btn {
+  background-color: #0d0e0db3;
+  color: #eee;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  margin: 0px 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.box-main__btn:hover {
+  cursor: pointer;
+  background-color: #7d7777;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* WEB RESPONSIVE  */
+
+@media screen and (max-width: 1255px) {
+  .box {
+    width: 30%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .box {
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .box {
+    width: 80%;
+    margin: 10px;
+    height: auto;
+  }
+  .figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .box {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header-title {
+    font-size: 29px;
+  }
+  .box {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .figure {
+    width: 100%;
+  }
+  .box {
+    width: 90%;
+    height: auto;
+  }
+  .header-title {
+    font-size: 25px;
+  }
+}
