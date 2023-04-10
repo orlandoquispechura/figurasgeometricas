@@ -11,7 +11,15 @@ body {
 /* ENCABEZADO  */
 
 .header {
-  background-color: #0d0e0db3;
+  /* background-color: #5c0979; */
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 212, 255, 1) 0%,
+    rgba(74, 48, 147, 1) 29%,
+    rgba(92, 9, 121, 1) 46%,
+    rgba(2, 0, 36, 1) 93%
+  );
   text-align: center;
   padding: 25px;
 }
@@ -47,14 +55,15 @@ body {
 .box {
   width: 340px;
   height: 580px;
-  border: 3px solid #0d0e0db3;
+  border: 3px solid #5c0979;
   border-radius: 10px;
   margin: 15px;
   float: left;
   overflow: hidden;
 }
 .box-header {
-  background-color: #0d0e0db3;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(250,212,255,1) 0%, rgba(74,48,147,1) 29%, rgba(92,9,121,1) 46%, rgba(2,0,36,1) 93%);
   text-align: center;
 }
 .box-header h2 {
@@ -82,11 +91,12 @@ body {
   border-radius: 8px;
 }
 .box-main__input:focus-within {
-  border: 3px solid rgba(59, 107, 237, 0.5);
+  border: 3px solid #9f53bb;
   box-shadow: 0 0 10px #719ece;
 }
 .box-main__btn {
-  background-color: #0d0e0db3;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(250,212,255,1) 0%, rgba(74,48,147,1) 29%, rgba(92,9,121,1) 46%, rgba(2,0,36,1) 93%);
   color: #eee;
   font-size: 20px;
   padding: 10px 20px;
